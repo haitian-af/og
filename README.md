@@ -1,8 +1,6 @@
-# Railway OG Image Generator
+# OG Image Generator
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/xWRIhd)
-
-Service that dynamically generates [Open Graph](https://ogp.me/) images for [Railway starters](https://railway.app/starters) that looks something like
+Service that dynamically generates [Open Graph](https://ogp.me/) images for the [haitian.community](https://railway.app/starters) that looks something like
 
 <img width="600" src="https://og.railway.app/api/image?fileType=svg&layoutName=docs&Page=Open+Graph+Generator" />
 
@@ -15,7 +13,7 @@ Use the generated image URL in the `<head>` of your HTML document as the og:imag
 
 <meta
   property="og:image"
-  content="https://og.railway.app/api/image?fileType=png&layoutName=Simple&Text=Hello+World"
+  content="https://og.haitian.community/api/image?fileType=png&layoutName=Simple&Text=Hello+World"
 />
 ```
 
@@ -39,7 +37,7 @@ This service can generate images using multiple _layouts_. A layout is defined a
 - Function that takes in layout config and returns CSS needed to render
 - A React component that takes in layout config as a prop
 
-For example, the "Simple" layout on [og.railway.app](https://og.railway.app) is defined as
+For example, the "Simple" layout is defined as
 
 ```tsx
 import React from "react";
@@ -84,9 +82,6 @@ This will render as
 <img width="600" src="https://user-images.githubusercontent.com/3044853/208225044-e6c4e496-039a-45bc-a310-834e041afdd0.png" />
 
 # 🚀 Development
-
-You can fork this repo or [deploy to Railway](https://railway.app/new?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fog-generator) to make it your own, customize, and use in your own projects.
-
 The frontend is a [NextJS](https://nextjs.org) site and the image generation happens in an API route.
 
 ```
